@@ -73,7 +73,7 @@
 
 .welcome h1 {
   color: rgb(101, 226, 170);
-  font-size: 120px;
+  font-size: 160px;
   font-family: "Macondo";
 }
 
@@ -92,6 +92,15 @@ audio {
   position: relative;
 }
 
+@media (max-width: 600px) {
+  .welcome h1 {
+    font-size: 100px;
+  }
+  .welcome button {
+    font-size: 18px;
+  }
+}
+
 .guante-img {
   background-image: url("guante.png");
   width: 100%;
@@ -99,6 +108,7 @@ audio {
   top: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: 30%;
   position: fixed;
   z-index: 2;
 }
@@ -110,5 +120,5 @@ audio {
 
 .fade-in {
   opacity: 1;
-  transition: opacity 1s ease-out;
+  transition: opacity 2s ease-out;
 }
