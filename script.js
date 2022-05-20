@@ -2,7 +2,9 @@ window.onload = () => {
   document.querySelector(".enter-site").onclick = () => {
     //Play audio and loop
     let audio = document.querySelector("audio");
+    audio.volume = 0.2;
     audio.play();
+
     audio.addEventListener("ended", () => {
       audio.play();
     });

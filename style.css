@@ -16,6 +16,18 @@ body {
   min-height: 100%; /* make sure it is at least as tall as the viewport */
   position: relative;
 }
+
+.welcome {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  position: fixed;
+}
 .welcome button {
   position: relative;
   display: inline-block;
@@ -31,7 +43,6 @@ body {
   font-family: "Macondo";
   margin-top: 60px;
 }
-
 .welcome button.big-button {
   padding: 10px 40px;
   border: 2px solid var(--colorShadeA);
@@ -55,56 +66,28 @@ body {
   transform: translate3d(0, 10px, -10px);
   transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
-
 .welcome button.big-button:hover {
   background: var(--colorShadeD);
   transform: translate(0, 3px);
 }
-
 .welcome button.big-button:hover::before {
   transform: translate3d(0, 10px, -1em);
 }
-
 .welcome button.big-button:active {
   transform: translate(0em, 0.75em);
 }
-
 .welcome button.big-button:active::before {
   transform: translate3d(0, 0, -1em);
-
   box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
 }
-
 .welcome h1 {
   color: rgb(101, 226, 170);
   font-size: 160px;
   font-family: "Macondo";
 }
-
 audio {
   display: none;
 }
-.welcome {
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  z-index: 3;
-  position: fixed;
-}
-
-@media (max-width: 600px) {
-  .welcome h1 {
-    font-size: 100px;
-  }
-  .welcome button {
-    font-size: 18px;
-  }
-}
-
 .guante-img {
   background-image: url("guante.png");
   width: 100%;
@@ -116,7 +99,6 @@ audio {
   position: fixed;
   z-index: 2;
 }
-
 .fade-out {
   opacity: 0;
   transition: opacity 2s ease-in;
@@ -125,4 +107,13 @@ audio {
 .fade-in {
   opacity: 1;
   transition: opacity 2s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome h1 {
+    font-size: 100px;
+  }
+  .welcome button {
+    font-size: 18px;
+  }
 }
