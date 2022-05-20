@@ -12,6 +12,10 @@
   --colorShadeE: rgb(205, 255, 232);
 }
 
+body {
+  min-height: 100%; /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
 .welcome button {
   position: relative;
   display: inline-block;
@@ -83,13 +87,13 @@ audio {
 .welcome {
   width: 100%;
   background-color: rgb(0, 0, 0);
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   z-index: 3;
-  position: relative;
+  position: fixed;
 }
 
 @media (max-width: 600px) {
