@@ -109,6 +109,17 @@ audio {
   transition: opacity 2s ease-out;
 }
 
+.mute__btn {
+  background: none;
+  display: block;
+  border: none;
+  color: white;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 10;
+}
+
 @media only screen and (max-width: 600px) {
   .welcome h1 {
     font-size: 100px;
