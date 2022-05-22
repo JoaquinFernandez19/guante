@@ -37,7 +37,7 @@ window.onload = () => {
     window.addEventListener("mousemove", (evt) => {
       let x = -(383 - evt.pageX) / 160;
       let y = -(72 - evt.pageY) / 160;
-      console.log(x);
+
       if (y >= 2.9) y = 2.9;
       if (x >= 6) x = 6;
 
