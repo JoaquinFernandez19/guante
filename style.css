@@ -100,7 +100,7 @@ audio {
   background-size: 1594px 895px;
   width: 1594px;
   height: 895px;
-  background-image: url("/media/guante.png");
+  background-image: url("media/guante.png");
   background-color: black;
   position: fixed;
   z-index: 2;
