@@ -143,6 +143,7 @@ audio {
   height: 6px;
   width: 17px;
   background: #ccc;
+  opacity: 0.6;
 }
 .inner-eye {
   /*pupil*/
@@ -151,7 +152,7 @@ audio {
   right: 6px;
   width: 7px;
   height: 7px;
-  background: #3f3f3f;
+  background: #030303;
   border-radius: 50%;
   content: " ";
 }
