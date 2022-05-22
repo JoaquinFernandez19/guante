@@ -88,14 +88,20 @@ body {
 audio {
   display: none;
 }
-.guante-img {
-  background-image: url("guante.png");
-  width: 100%;
+
+.guante-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 30%;
+  background-color: black;
+}
+.guante-img {
+  background-size: 1594px 895px;
+  width: 1594px;
+  height: 895px;
+  background-image: url("/media/guante.png");
+  background-color: black;
   position: fixed;
   z-index: 2;
 }
@@ -120,11 +126,50 @@ audio {
   z-index: 10;
 }
 
-@media only screen and (max-width: 600px) {
+.eyeS {
+  position: absolute;
+  top: 72px;
+  left: 383px;
+  transform: rotate(332deg);
+  display: flex;
+  gap: 36px;
+}
+
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 88%;
+
+  height: 6px;
+  width: 17px;
+  background: #ccc;
+}
+.inner-eye {
+  /*pupil*/
+  position: absolute;
+  bottom: 0px;
+  right: 6px;
+  width: 7px;
+  height: 7px;
+  background: #3f3f3f;
+  border-radius: 50%;
+  content: " ";
+}
+
+@media only screen and (max-width: 900px) {
   .welcome h1 {
     font-size: 100px;
   }
   .welcome button {
     font-size: 18px;
+  }
+  .eyeS {
+    display: none;
+  }
+  .guante-img {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position-x: 30%;
   }
 }

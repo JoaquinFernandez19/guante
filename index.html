@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guante</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto&display=swap"
       rel="stylesheet"
@@ -16,16 +22,34 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+
+    <head>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    </head>
   </head>
   <body>
     <div class="mute">
-      <button class="mute__btn"> <i class="mute__icon fa-solid fa-2xl"></i> </button>
+      <button class="mute__btn">
+        <i class="mute__icon fa-solid fa-2xl"></i>
+      </button>
     </div>
     <div class="welcome">
       <h1>Guante</h1>
       <button class="enter-site big-button">Explorar</button>
     </div>
-    <div class="guante-img"></div>
-    <audio src="sound.mp3" controls loop></audio>
+    <div class="guante-img-container">
+      <div class="guante-img">
+        <div class="eyeS">
+          <div class="eye">
+            <div class="inner-eye eye-left"></div>
+          </div>
+          <div class="eye">
+            <div class="inner-eye eye-right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio src="/media/sound.mp3" controls loop></audio>
   </body>
 </html>
